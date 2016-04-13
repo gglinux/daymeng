@@ -1,8 +1,8 @@
 #Daimeng
-It is a crowdfund website,based on thinkphp.
+It is a crowdfund website,based on thinkphp.Linux+Nginx+Mysql+PHP(LNMP) frame
 
 ## Introduction
-*  Project  module:  the item of crowdfund
+*  Project  module:  the item of crowdfund,start item
 *  Passport module:  login,regster and so on
 *  User     module:  my page,my crowdfund
 *  News     module:  system news,private message
