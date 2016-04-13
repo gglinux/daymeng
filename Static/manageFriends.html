@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="res/css/base.css">
+	<link rel="stylesheet" type="text/css" href="res/css/myPage.css">
+	<link rel="stylesheet" type="text/css" href="res/css/newsCenter.css">	
+	<title>个人中心-好友管理</title>
+</head>
+<body>
+	<!-- 头部 -->
+	<div class="header">
+	  <div class="wrap clearfix" pbid="header">
+	    <div class="img-logo">
+	      <h1>
+	        <a title="众筹网" class="ie6fixpic" href="/index" alt="众筹网">众筹网</a>
+	      </h1>
+	    </div>
+	    <!--menu start-->
+	    <div class="menu">
+	      <ul class="clearfix">
+	          <li><a href="myPage.html">个人中心 </a></li>
+	          <li><a href="myCrowdfunding.html">我的众筹 </a></li>
+	          <!-- <li><a href="/open">我的好友 </a></li> -->
+	          <li><a href="newsCenter.html">消息中心 </a></li>
+	      </ul>
+	    </div>
+	   </div>
+    <!-- user menu end-->
+  	</div>
+	<!-- 主内容去区-->
+	<div class="main clearfix">
+		<div class="setting wrap">
+			<div class="setting-title clearfix">
+			<h3>个人中心</h3>
+			</div>
+			<div class="setting-content clearfix">
+				<div class="setting-menu">
+					<ul class="clearfix">
+						<li ><a class="icons msg ie6fixpic" href="myPage.html">信息修改</a></li>
+						<li ><a class="icons rec-com ie6fixpic" href="changePasswd.html">密码修改</a></li>
+						<li class="select"><a class="icons rec-com ie6fixpic" href="manageFriends.html">好友管理</a></li>
+						<li><a class="icons rec-com ie6fixpic" href="addressManage.html">收货地址管理</a></li>
+						<li><a class="icons rec-com ie6fixpic" href="tradeInfo.html">我的交易信息</a></li>
+					</ul>
+				</div>
+				
+				<div class="setting-detail">
+				<div class="setting-address">
+					<h3 class="green">好友管理</h3>
+					<p>您可以管理您的好友，或者给他们发送私信，修改备注</p>
+					<!--address tab 地址管理列表 static-->
+					<div class="address-tab" id="addr_list" style="display: block; padding-top:50px;">
+<!-- 						<div class="btn-add">
+							<a class="btn-base btn-red-h30 common-sprite" onclick="add_addr()">
+								<span class="common-sprite">添加地址</span>
+							</a>
+						</div> -->
+						<div class="ads-list">
+													<table>
+								<colgroup>
+									<col width="70">
+									<col width="90">
+									<col width="105">
+									<col width="210">
+									<col width="85">
+									<col width="115">
+									
+								</colgroup>
+								<thead>
+									<tr>
+										<th>图片</th>
+										<td>用户名</td>
+										<td>备注</td>
+										<td>个人说明</td>
+										<td>地址</td>
+										<td>操作</td>
+									</tr>
+								</thead>
+								<tbody>
+																		<tr>
+										<th><img src="res/image/visitor1.png"></th>
+										<td>gglinux</td>
+										<td>碧哥 修改备注</td>
+										<td>呵呵，O(∩_∩)O~</td>
+										<td>湖南科技大学</td>
+										<td data-id="57264"><a class="green Js-addr-modify" href="javascript:;">发私信</a><a class="green Js-addr-del" href="javascript:;">删除好友</a></td>
+									</tr>
+																	</tbody>
+							</table>
+													</div>
+					</div>
+				</div>
+				<!--setting address end-->
+			</div>
+
+				
+				
+			</div>
+		</div>
+	</div>
+	<!-- 尾部 -->
+	<div class="gbottom">
+	    <div class="gbottom-nav">
+	        <a href="#">关于我们</a>
+	        <a href="#">加入呆萌</a>
+	        <a href="#">媒体报道</a>
+	        <a href="#">帮助中心</a>
+	        <a href="#">内容专区</a>
+	        <a href="#">免责声明</a>
+	        <a href="#">联系我们</a>
+	        <a href="#">移动版</a>
+	    </div>
+	    <div class="gbottom-i">©2014呆萌网&nbsp;湘ICP备09043258号-2&nbsp;湘公网安备1101052730</div>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="res/css/base.css">
+	<link rel="stylesheet" type="text/css" href="res/css/myPage.css">
+	<link rel="stylesheet" type="text/css" href="res/css/newsCenter.css">	
+	<title>个人中心-修改密码</title>
+</head>
+<body>
+	<!-- 头部 -->
+	<div class="header">
+	  <div class="wrap clearfix" pbid="header">
+	    <div class="img-logo">
+	      <h1>
+	        <a title="众筹网" class="ie6fixpic" href="/index" alt="众筹网">众筹网</a>
+	      </h1>
+	    </div>
+	    <!--menu start-->
+	    <div class="menu">
+	      <ul class="clearfix">
+	          <li><a href="myPage.html">个人中心 </a></li>
+	          <li><a href="myCrowdfunding.html">我的众筹 </a></li>
+	          <!-- <li><a href="/open">我的好友 </a></li> -->
+	          <li><a href="newsCenter.html">消息中心 </a></li>
+	      </ul>
+	    </div>
+	   </div>
+    <!-- user menu end-->
+  	</div>
+	<!-- 主内容去区-->
+	<div class="main clearfix">
+		<div class="setting wrap">
+			<div class="setting-title clearfix">
+			<h3>个人中心</h3>
+			</div>
+			<div class="setting-content clearfix">
+				<div class="setting-menu">
+					<ul class="clearfix">
+						<li ><a class="icons msg ie6fixpic" href="myPage.html">信息修改</a></li>
+						<li  class="select"><a class="icons rec-com ie6fixpic" href="changePasswd.html">密码修改</a></li>
+						<li><a class="icons rec-com ie6fixpic" href="manageFriends.html">好友管理</a></li>
+						<li><a class="icons rec-com ie6fixpic" href="addressManage.html">收货地址管理</a></li>
+						<li><a class="icons rec-com ie6fixpic" href="tradeInfo.html">我的交易信息</a></li>
+					</ul>
+				</div>
+				<div class="setting-detail">
+				<!--setting-form static-->
+				<form name="passModify" class="setting-form" action="/settings-ajax_save_password" wx-validator="" wx-validator-ajax="" wx-validator-error-class="error-text" autocomplete="off">
+					<div class="form-item clearfix">
+						<label>原始密码：</label>
+						<input name="old_pwd" type="password" value="" wx-validator-rule="required|rangelength" wx-validator-param="|1-16">
+					</div>
+					<div class="form-item clearfix">
+						<label>新密码：</label>
+						<input name="user_pwd" type="password" value="" wx-validator-rule="required|rangelength" wx-validator-param="|6-16">
+						<!-- <span class="error-text">*密码格式错误</span> -->
+					</div>
+					<div class="form-item clearfix">
+						<label>确认密码：</label>
+						<input name="confirm_user_pwd" type="password" value="" wx-validator-rule="required|equalTo" wx-validator-param="|user_pwd">
+						<span class="error-text hidden" id="wx-validator-confirm_user_pwd-equalTo">两次密码不一致</span>
+					</div>
+					<div class="setting-submit">
+						<a class="btn-base btn-red-h30 common-sprite" href="javascript:;" type="submit"><span class="common-sprite">保存</span></a>
+					</div>
+				</form>
+				<!--setting-form end-->
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<!-- 尾部 -->
+	<div class="gbottom">
+	    <div class="gbottom-nav">
+	        <a href="#">关于我们</a>
+	        <a href="#">加入呆萌</a>
+	        <a href="#">媒体报道</a>
+	        <a href="#">帮助中心</a>
+	        <a href="#">内容专区</a>
+	        <a href="#">免责声明</a>
+	        <a href="#">联系我们</a>
+	        <a href="#">移动版</a>
+	    </div>
+	    <div class="gbottom-i">©2014呆萌网&nbsp;湘ICP备09043258号-2&nbsp;湘公网安备1101052730</div>
+	</div>
+	
+</body>
+</html>

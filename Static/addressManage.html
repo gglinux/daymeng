@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="res/css/base.css">
+	<link rel="stylesheet" type="text/css" href="res/css/myPage.css">
+	<link rel="stylesheet" type="text/css" href="res/css/newsCenter.css">	
+	<title>个人中心-收货地址管理</title>
+</head>
+<body>
+	<!-- 头部 -->
+	<div class="header">
+	  <div class="wrap clearfix" pbid="header">
+	    <div class="img-logo">
+	      <h1>
+	        <a title="众筹网" class="ie6fixpic" href="/index" alt="众筹网">众筹网</a>
+	      </h1>
+	    </div>
+	    <!--menu start-->
+	    <div class="menu">
+	      <ul class="clearfix">
+	          <li><a href="myPage.html">个人中心 </a></li>
+	          <li><a href="myCrowdfunding.html">我的众筹 </a></li>
+	          <!-- <li><a href="/open">我的好友 </a></li> -->
+	          <li><a href="newsCenter.html">消息中心 </a></li>
+	      </ul>
+	    </div>
+	   </div>
+    <!-- user menu end-->
+  	</div>
+	<!-- 主内容去区-->
+	<div class="main clearfix">
+		<div class="setting wrap">
+			<div class="setting-title clearfix">
+			<h3>个人中心</h3>
+			</div>
+			<div class="setting-content clearfix">
+				<div class="setting-menu">
+					<ul class="clearfix">
+						<li ><a class="icons msg ie6fixpic" href="myPage.html">信息修改</a></li>
+						<li ><a class="icons rec-com ie6fixpic" href="changePasswd.html">密码修改</a></li>
+						<li><a class="icons rec-com ie6fixpic" href="manageFriends.html">好友管理</a></li>
+						<li class="select"><a class="icons rec-com ie6fixpic" href="addressManage.html">收货地址管理</a></li>
+						<li><a class="icons rec-com ie6fixpic" href="tradeInfo.html">我的交易信息</a></li>
+					</ul>
+				</div>
+
+				<div class="setting-detail">
+				<!--setting address static-->
+				<div class="setting-address">
+					<h3 class="green">收件地址管理</h3>
+					<p>可添加管理多个收件地址，以便收取回报时使用</p>
+					<!--address tab 地址管理列表 static-->
+					<div class="address-tab" id="addr_list" style="display: block;">
+						<div class="btn-add">
+							<a class="btn-base btn-red-h30 common-sprite" onclick="add_addr()">
+								<span class="common-sprite">添加地址</span>
+							</a>
+						</div>
+						<div class="ads-list">
+													<table>
+								<colgroup>
+									<col width="70">
+									<col width="90">
+									<col width="210">
+									<col width="85">
+									<col width="115">
+									<col width="105">
+								</colgroup>
+								<thead>
+									<tr>
+										<th>收件人</th>
+										<td>所在地区</td>
+										<td>详细地址</td>
+										<td>邮编</td>
+										<td>电话/手机</td>
+										<td>操作</td>
+									</tr>
+								</thead>
+								<tbody>
+																		<tr>
+										<th>陈刚</th>
+										<td>海南海口</td>
+										<td>海南海口</td>
+										<td>000000</td>
+										<td>13666666666</td>
+										<td data-id="57264"><a class="green Js-addr-modify" href="javascript:;">编辑</a><a class="green Js-addr-del" href="javascript:;">删除</a></td>
+									</tr>
+																	</tbody>
+							</table>
+													</div>
+					</div>
+					<!--address tab 地址管理列表 end-->
+					<!--address tab 地址编辑  static-->
+					<div class="address-tab" id="add_addr" style="display: none;">
+						<div class="back-btn tr">
+							<a class="btn-base btn-gray-h20 common-sprite" onclick="addr_back()"><span class="common-sprite">返回</span></a>
+						</div>
+						<form name="address" class="address-form" action="/settings-save_consignee" wx-validator="" autocomplete="off" wx-validator-ajax="" wx-validator-error-class="error-text">
+							<div class="form-item clearfix">
+								<label>收件人：</label>
+								<input name="consignee" type="text" value="" wx-validator-rule="required">
+							</div>
+							<div class="form-item clearfix">
+								<label>手机：</label>
+								<input name="mobile" type="text" value="" wx-validator-rule="required|mobile">
+							</div>
+							<div class="form-item clearfix">
+								<label>所在地：</label>
+							</div>
+							<div class="form-item clearfix">
+								<label>详细地址：</label>
+								<input name="address" class="ads-ipt" type="text" value="" wx-validator-rule="required">
+							</div>
+							<div class="form-item clearfix">
+								<label>邮编：</label>
+								<input name="zip" type="text" value="" wx-validator-rule="post">
+							</div>
+							<div class="form-submit">
+								<a class="btn-base btn-red-h30 common-sprite" type="submit">
+									<span class="common-sprite">保存</span>
+								</a>
+							</div>
+						<input name="id" style="display: none;" value="57264"></form>
+					</div>
+					<!--address tab 地址编辑  end-->
+				</div>
+				<!--setting address end-->
+			</div>
+			
+
+			</div>
+		</div>
+	</div>
+	<!-- 尾部 -->
+	<div class="gbottom">
+	    <div class="gbottom-nav">
+	        <a href="#">关于我们</a>
+	        <a href="#">加入呆萌</a>
+	        <a href="#">媒体报道</a>
+	        <a href="#">帮助中心</a>
+	        <a href="#">内容专区</a>
+	        <a href="#">免责声明</a>
+	        <a href="#">联系我们</a>
+	        <a href="#">移动版</a>
+	    </div>
+	    <div class="gbottom-i">©2014呆萌网&nbsp;湘ICP备09043258号-2&nbsp;湘公网安备1101052730</div>
+	</div>
+	
+</body>
+</html>
