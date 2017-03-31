@@ -1,4 +1,4 @@
-#Daimeng
+## Daimeng
 It is a crowdfund website,based on thinkphp.Linux+Nginx+Mysql+PHP(LNMP) frame
 
 ## Introduction
