@@ -2,7 +2,7 @@
 [![Author](https://img.shields.io/badge/author-gglinux-green.svg)](http://gglinux.com/)
 [![License](https://img.shields.io/badge/license-apache2-blue.svg)](https://github.com/gglinux/daymeng/blob/master/LICENSE)
 
-It is a crowdfund website,based on thinkphp.Linux+Nginx+Mysql+PHP(LNMP) frame
+使用ThinkPHP搭建的众筹网站，LNMP框架.
 
 ## Introduction
 *  Project  module:  项目详情，发起项目，列表页
